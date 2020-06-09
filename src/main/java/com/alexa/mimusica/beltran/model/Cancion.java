@@ -23,19 +23,6 @@ public class Cancion implements Comparable<Cancion> {
 
     }
 
-    public Map<String, Object> toMap() {
-        Map<String, Object> map = new HashMap<>();
-
-        map.put("titulo", this.titulo);
-        map.put("autor", this.autor);
-        map.put("disco", this.disco);
-        map.put("ubicacion", this.ubicacion);
-        map.put("token", this.token);
-        map.put("propietario", this.propietario);
-
-        return map;
-    }
-
 
     public String getTitulo() {
         return titulo;

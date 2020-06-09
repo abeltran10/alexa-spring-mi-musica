@@ -119,7 +119,7 @@ public class PlayAudioIntent implements IntentRequestHandler {
         List<Map<String, Object>> mapList = (playList != null) ? Convert.toMapList(playList) : null;
         attributes.put("playList", mapList);
 
-        attributes.put("cancion", cancion.toMap());
+        attributes.put("cancion", Convert.toMap(cancion));
 
         Persistencia.savePersistedAttributes(input, attributes);
 
