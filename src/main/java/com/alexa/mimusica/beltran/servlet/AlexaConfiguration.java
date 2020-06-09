@@ -52,7 +52,8 @@ public class AlexaConfiguration {
             ,NextIntent nextIntent, PreviousIntent previousIntent, PauseIntent pauseIntent, ResumeIntent resumeIntent, StopIntent stopIntent
             ,ContinueIntent continueIntent, PlaybackStarted playbackStarted, PlaybackFinished playbackFinished, PlaybackStopped playbackStopped
             ,PlaybackNearlyFinished playbackNearlyFinished, PlaybackFailed playbackFailed, EndSession endSession, FallbackIntent fallbackIntent
-            ,MyPersistenceAdapter myPersistenceAdapter) {
+            ,MyPersistenceAdapter myPersistenceAdapter)
+    {
 
         this.launchRequestHandler = launchRequestHandler;
         this.helpIntent = helpIntent;

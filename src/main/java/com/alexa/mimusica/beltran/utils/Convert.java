@@ -1,7 +1,5 @@
 package com.alexa.mimusica.beltran.utils;
 
-import com.alexa.mimusica.beltran.model.Cancion;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -32,12 +30,15 @@ public class Convert {
             e.printStackTrace();
 
         } catch (IllegalAccessException e) {
+
             e.printStackTrace();
 
         } catch (InvocationTargetException e) {
 
             e.printStackTrace();
+
         }finally {
+
             return map;
         }
 
