@@ -23,6 +23,16 @@ public class Cancion implements Comparable<Cancion> {
 
     }
 
+    public Cancion(Map<String, Object> map) {
+        this.titulo = (String) map.get("titulo");
+        this.autor = (String) map.get("autor");
+        this.disco = (String) map.get("disco");
+        this.ubicacion = (String) map.get("ubicacion");
+        this.token = (String) map.get("token");
+        this.propietario = (String) map.get("propietario");
+
+    }
+
 
     public String getTitulo() {
         return titulo;
