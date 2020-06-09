@@ -12,6 +12,7 @@
     <artifactId>mi-musica</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mi-musica</name>
+    <packaging>war</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -43,6 +44,13 @@
         </dependency>
 
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.amazon.alexa</groupId>
             <artifactId>ask-sdk-servlet-support</artifactId>
             <version>2.30.0</version>
@@ -51,6 +59,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+
         </dependency>
 
         <dependency>
