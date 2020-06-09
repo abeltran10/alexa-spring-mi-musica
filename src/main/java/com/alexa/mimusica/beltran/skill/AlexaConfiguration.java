@@ -1,4 +1,4 @@
-package com.alexa.mimusica.beltran.servlet;
+package com.alexa.mimusica.beltran.skill;
 
 import com.alexa.mimusica.beltran.audioplayer.*;
 import com.alexa.mimusica.beltran.intents.*;
@@ -7,15 +7,12 @@ import com.alexa.mimusica.beltran.request.EndSession;
 import com.alexa.mimusica.beltran.request.LaunchRequestHandler;
 import com.amazon.ask.Skill;
 import com.amazon.ask.Skills;
-import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.servlet.SkillServlet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.List;
 
 @Configuration
 public class AlexaConfiguration {
