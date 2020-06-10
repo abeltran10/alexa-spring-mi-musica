@@ -24,8 +24,6 @@ import static com.amazon.ask.request.Predicates.requestType;
 public class PlaybackStarted implements RequestHandler {
     private static Logger logger = Logger.getLogger(PlaybackStarted.class.getName());
 
-    @Autowired
-    private CancionDAO cancionDAO;
 
     @Override
     public boolean canHandle(HandlerInput input) {

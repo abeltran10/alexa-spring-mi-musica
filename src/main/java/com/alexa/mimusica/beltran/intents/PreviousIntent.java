@@ -25,9 +25,6 @@ import static com.amazon.ask.request.Predicates.intentName;
 public class PreviousIntent implements IntentRequestHandler {
     Logger logger = Logger.getLogger(PreviousIntent.class.getName());
 
-    @Autowired
-    private CancionDAO cancionDAO;
-
 
     @Override
     public boolean canHandle(HandlerInput input, IntentRequest intentRequest) {

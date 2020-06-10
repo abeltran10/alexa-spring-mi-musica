@@ -1,8 +1,6 @@
 package com.alexa.mimusica.beltran.model;
 
-import com.google.cloud.firestore.DocumentSnapshot;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Cancion implements Comparable<Cancion> {
@@ -30,7 +28,6 @@ public class Cancion implements Comparable<Cancion> {
         this.ubicacion = (String) map.get("ubicacion");
         this.token = (String) map.get("token");
         this.propietario = (String) map.get("propietario");
-
     }
 
 

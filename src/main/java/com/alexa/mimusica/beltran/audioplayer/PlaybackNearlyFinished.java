@@ -26,10 +26,6 @@ import static com.amazon.ask.request.Predicates.requestType;
 public class PlaybackNearlyFinished implements RequestHandler {
     private static Logger logger = Logger.getLogger(PlaybackNearlyFinished.class.getName());
 
-    @Autowired
-    private CancionDAO cancionDAO;
-
-
     @Override
     public boolean canHandle(HandlerInput input) {
         return input.matches(requestType(PlaybackNearlyFinishedRequest.class));
