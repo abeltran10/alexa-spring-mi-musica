@@ -29,5 +29,5 @@ build/
 
 ### VS Code ###
 .vscode/
-/resources/application.properties
-/resources/mi-app-alexa-musica.json
+src/main/resources/application.properties
+src/main/resources/mi-app-alexa-musica.json
